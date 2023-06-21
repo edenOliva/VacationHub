@@ -1,0 +1,8 @@
+.FollowersChart button {
+    height: 30px;
+    font-size: large;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: rgb(4, 7, 77);
+    color: aliceblue;
+}

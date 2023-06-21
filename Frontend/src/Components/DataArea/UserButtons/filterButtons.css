@@ -1,0 +1,22 @@
+.filterButtons a {
+    margin: 35px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid;
+    height: 35px;
+    width: fit-content;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.filterButtons a.active {
+    color: whitesmoke;
+    background-color: #3b3c36;
+
+}
+
+.filterButtons {
+    margin: 25px;
+}

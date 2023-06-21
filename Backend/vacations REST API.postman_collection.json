@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "8985fdec-9df6-41ab-ab24-48fd76d2500c",
+		"name": "vacations REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26906676"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Neta\",\r\n    \"lastName\": \"Oliva\",\r\n    \"email\": \"neta@gmail.com\",\r\n    \"password\": \"4321\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"neta@gmail.com\",\r\n    \"password\": \"4321\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vacations",
+			"item": [
+				{
+					"name": "Get all vacations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/images/e843d6b6-30c9-4237-adf4-85ea9153594a.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"images",
+								"e843d6b6-30c9-4237-adf4-85ea9153594a.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one vacation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get users followed vacations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/followed-vacations/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"followed-vacations",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add vacation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "destination",
+									"value": "Chicago",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Chicago is a vibrant city located in the Midwest region of the United States, famous for its stunning architecture, cultural landmarks, and delicious food. It is a popular vacation spot for travelers seeking a city break.",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2023-03-29",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-04-15",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2599",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "image.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/vacations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update vacation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "destination",
+									"value": "Chicago",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Chicago is a vibrant city located in the Midwest region of the United States, famous for its stunning architecture, cultural landmarks, and delicious food. It is a popular vacation spot for travelers seeking a city break.",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2023-04-01",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-04-25",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2099",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "chicago2.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/24",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete vacation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/24",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"24"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Likes",
+			"item": [
+				{
+					"name": "Unlike",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"firstName\": \"Chongo\",\r\n    \"lastName\": \"Malka\",\r\n    \"email\": \"chongo@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"roleId\":1 \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/likes/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"likes",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add like",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/likes/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"likes",
+								"18"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTAsImZpcnN0TmFtZSI6Ik5ldGEiLCJsYXN0TmFtZSI6Ik9saXZhIiwiZW1haWwiOiJuZXRhQGdtYWlsLmNvbSIsInJvbGVJZCI6Mn0sImlhdCI6MTY4MzY5NjIwOSwiZXhwIjoxNjgzNzM5NDA5fQ.L-IplVr_ehIbkQOhUZ4ajPjcw7MztbBPm4HIvGEbXoM",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

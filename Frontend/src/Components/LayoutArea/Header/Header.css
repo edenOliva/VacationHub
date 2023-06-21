@@ -1,0 +1,11 @@
+.Header {
+    padding-bottom: 40px;
+}   
+
+.Header h1 {
+    margin: 0;
+}
+
+.Header img {
+    height: 100px;
+}
