@@ -5,7 +5,7 @@ function Header(): JSX.Element {
         <div className="Header">
             <AuthMenu />
             <br />
-			<h1>Project 3</h1>
+			<h1>VacationHub</h1>
             <span>kitties around the world</span>
         </div>
     );
