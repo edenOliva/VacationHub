@@ -32,13 +32,18 @@ To ensure a seamless experience, VacationHub utilizes the following technologies
 ### User Platform
 Take a closer look at the of VacationHub's user platform!
 
-[Discovering and Exploring Vacations](video-link-1) 
+![Exploring and Filtering Vacations](Assets/VacationHubUser.mp4) 
 
 ### Admin Platform
 With VacationHub, admins can efficiently manage the vacation catalog and ensure a smooth travel experience for users. See how admins can add, edit, and delete vacations, while also gaining valuable insights through comprehensive reports. 
 
-[Adding New Vacations](video-link-4)
-[Editing Vacation Details](video-link-5)
-[Deleting Vacations](video-link-6)
-[Generating Reports](video-link-7)
+![Adding, Editing and Deleting Vacations + Generating Reports](Assets/VacationHubAdmin.mp4)
 
+
+## 🤝 Contributing
+
+🎉 Contributions are welcome! Feel free to enhance the project, add new features, or fix any issues you come across. 
+
+Let's collaborate and bring new ideas to life! Thank you in advance for your contributions!
+
+🌟 If you're unsure about where to start or need any assistance, don't hesitate to reach out. We're here to help you make a meaningful contribution to the project. 
