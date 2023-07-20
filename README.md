@@ -27,19 +27,6 @@ To ensure a seamless experience, VacationHub utilizes the following technologies
 - Server-side 🖥️: RESTful API powered by Node.js and Express. The server-side is built using TypeScript for optimal performance and reliability.
 - Client-side 🌐: React, the front-end project, is crafted with TypeScript to deliver a dynamic and user-friendly interface.
 
-## 📹 Take a Sneak Peek at VacationHub in Action!
-
-### User Platform
-Take a closer look at the of VacationHub's user platform!
-
-![Exploring and Filtering Vacations](Assets/VacationHubUser.avi) 
-
-### Admin Platform
-With VacationHub, admins can efficiently manage the vacation catalog and ensure a smooth travel experience for users. See how admins can add, edit, and delete vacations, while also gaining valuable insights through comprehensive reports. 
-
-![Adding, Editing and Deleting Vacations + Generating Reports](Assets/VacationHubAdmin.avi)
-
-
 ## 🤝 Contributing
 
 🎉 Contributions are welcome! Feel free to enhance the project, add new features, or fix any issues you come across. 
